@@ -1,0 +1,7 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+disabled_rules: # rule identifiers to exclude from running
+  - line_length
+  - large_tuple
+  - identifier_name
+  - control_statement
