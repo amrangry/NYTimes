@@ -13,13 +13,13 @@ Topic demoestrate in this application
 ##### * Coredata
 
 
-# Picture says a thousand words
+##  Picture says a thousand words
 ---
 
 ![Alt text](https://github.com/amrangry/RealEstates_demo/blob/master/project_demo_gif.gif?raw=true "sample")
 
 
-Environment
+## Environment
 ---
 ```ruby
 Xcode 9.4.1
@@ -28,7 +28,7 @@ Xcode 9.4.1
 Swift 4.1
 ```
 
-Prerequisites
+##  Setup Prerequisites   💻
 ---
 You need run makefile do that follow the following 
 
@@ -38,13 +38,20 @@ You need run makefile do that follow the following
 * $ make start
 ```
 
+## Contributing 🤘
+---
+All your feedback and help to improve this project is very welcome. Please create issues for your bugs, ideas and enhancement requests, or better yet, contribute directly by creating a PR. 😎
 
-LICENSE
+When reporting an issue, please add a detailed instruction, and if possible a code snippet or test that can be used as a reproducer of your problem. 💥
+
+When creating a pull request, please adhere to the current coding style where possible, and create tests with your code so it keeps providing an awesome test coverage level 💪
+
+## LICENSE
 ---
 Distributed under the MIT License.
 
 
-Author
+## Author
 ---
 #### If you wish to contact me
 
