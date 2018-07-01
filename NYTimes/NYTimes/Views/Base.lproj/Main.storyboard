@@ -106,7 +106,7 @@
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
+                    <navigationItem key="navigationItem" title="Detail" largeTitleDisplayMode="always" id="mOI-FS-AaM"/>
                     <connections>
                         <outlet property="activityThumbNilLoader" destination="wcS-Ww-60x" id="pq3-Oi-Jla"/>
                         <outlet property="byWriter" destination="vJB-tp-1b8" id="BRv-nV-6kl"/>
@@ -289,7 +289,7 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8"/>
+                    <navigationItem key="navigationItem" title="NY Times" largeTitleDisplayMode="always" id="Zdf-7t-Un8"/>
                     <connections>
                         <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="t34-8E-Vgy"/>
                     </connections>

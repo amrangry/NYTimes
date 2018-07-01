@@ -11,7 +11,14 @@ import Foundation
 import UIKit
 
 class DataManager {
-    static func getNYTimesArticles(completionHandler: @escaping (_ isSuccess: Bool, _ status: ResponseStatus, _ result: [Displayable]?) -> Void) {
+
+    static let share = DataManager()
+
+    private init() {
+
+    }
+
+    func getNYTimesArticles(completionHandler: @escaping (_ isSuccess: Bool, _ status: ResponseStatus, _ result: [Displayable]?) -> Void) {
         ProgressLoader.show()
 
         BackendAPI.getNYTimesArticles { result in
@@ -37,7 +44,7 @@ class DataManager {
                 completionHandler(true, ResponseStatus.success, result)
 
             case .failure(let error):
-                let failureObject = failureErrorCompletionHandler(error: error)
+                let failureObject = self.failureErrorCompletionHandler(error: error)
                 completionHandler(failureObject.0, failureObject.1, nil)
             }
         }
@@ -45,7 +52,7 @@ class DataManager {
 }
 
 extension DataManager {
-    static func failureErrorCompletionHandler(error: NetworkErrorCodeForResponse) -> (Bool, ResponseStatus, String) {
+    func failureErrorCompletionHandler(error: NetworkErrorCodeForResponse) -> (Bool, ResponseStatus, String) {
         switch error {
         case .errorInParsingResponse:
             return (false, ResponseStatus.errorInParsingResponse, "Connection error")
