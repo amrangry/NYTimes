@@ -1,8 +1,8 @@
 //
 //  URLFactory .swift
-//  RealEstate
+//  NYTimes
 //
-//  Created by Amr ELghadban on 6/14/18.
+//  Created by Amr ELghadban on 6/30/18.
 //  Copyright © 2018 ADKA. All rights reserved.
 //
 
@@ -19,7 +19,6 @@ enum URLFactory {
         case scheme = "https://"
         case host = "api.nytimes.com"
         case basePathComponents = "/svc/mostpopular/v2/"
-        // case path = "/mostviewed/{section}/{time-period}.json"
     }
 
     var url: URL? {
@@ -53,10 +52,6 @@ enum URLFactory {
     }
 
     var apiKey: String {
-//        let base64data = Data(base64Encoded: Constants.APIKey)
-//
-//        let apiKeyString = String(data: base64data!, encoding: .utf8)!
-
         let apiKeyString = Constants.APIKey
         return "?api-key=" + apiKeyString
     }

@@ -23,15 +23,14 @@ extension UIAlertController {
     func show(title: String, message: String) {
         self.title = title
         self.message = message
-        //  self.preferredStyle = .alert
         self.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { action in
             switch action.style {
             case .default:
-                print("default")
+                debugPrint("default")
             case .cancel:
-                print("cancel")
+                debugPrint("cancel")
             case .destructive:
-                print("destructive")
+                debugPrint("destructive")
             }
         }))
         self.show()

@@ -10,7 +10,6 @@ import UIKit
 
 class MostViewedMasterViewController: UITableViewController {
     var detailViewController: DetailViewController?
-    // var dataSourceObjects = [MostViewed]()
     let segueIdentiferForDetailsView = "showDetail"
     var mostViwedViewModel: MostViwedViewModel?
 
@@ -80,7 +79,6 @@ extension MostViewedMasterViewController {
         }
         let object = dataSourceObjects[indexPath.row]
         cell.bindData(object: object)
-        // cell.textLabel!.text = object.description
         return cell
     }
 

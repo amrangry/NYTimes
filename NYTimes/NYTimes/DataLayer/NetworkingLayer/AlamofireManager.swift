@@ -1,9 +1,9 @@
 //
 //  AlamofireManager.swift
-//  AdKa
+//  NYTimes
 //
-//  Created by Amr ELghadban on 3/16/18.
-//  Copyright © 2018 AdKa  Inc. All rights reserved.
+//  Created by Amr ELghadban on 6/30/18.
+//  Copyright © 2018 ADKA. All rights reserved.
 //
 import Foundation
 import Alamofire

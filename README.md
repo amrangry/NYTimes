@@ -8,16 +8,14 @@ https://developer.nytimes.com/
 Topic demoestrate in this application
 ---
 ##### * makeFile, bundler, cocaPods
-##### * URLSession
 ##### * API Router
 ##### * NetworkLayer and DataLayer
-##### * Coredata
-
-
+##### * Alamofire
+##### * MVVM
 ##  Picture says a thousand words
 ---
 
-![Alt text](https://github.com/amrangry/RealEstates_demo/blob/master/project_demo_gif.gif?raw=true "sample")
+![Alt text](https://github.com/amrangry/NYTimes/blob/master/project_demo_gif.gif?raw=true "sample")
 
 
 ## Environment

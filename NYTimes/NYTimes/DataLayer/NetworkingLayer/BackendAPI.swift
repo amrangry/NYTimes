@@ -1,8 +1,8 @@
 //
 //  BackendAPI.swift
-//  RealEstate
+//  NYTimes
 //
-//  Created by Amr ELghadban on 6/14/18.
+//  Created by Amr ELghadban on 6/30/18.
 //  Copyright © 2018 ADKA. All rights reserved.
 //
 
@@ -22,10 +22,6 @@ class BackendAPI {
             completionHandler(NetworkResult.failure(.noInternet))
             return
         }
-
-//        URLSessionManager.share.invokeAPI(url) { response in
-//            completionHandler(response)
-//        }
 
         guard let url = AlamofireManager.share.createRequest(url: urlRoute, forceUpdate: false) else {
             completionHandler(NetworkResult.failure(.noInternet))
