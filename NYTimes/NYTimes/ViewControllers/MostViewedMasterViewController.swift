@@ -65,10 +65,10 @@ class MostViewedMasterViewController: UITableViewController {
             }
         }
     }
-
+}
     // MARK: - Table View
 
-    // extension MasterViewController {
+ extension MostViewedMasterViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
