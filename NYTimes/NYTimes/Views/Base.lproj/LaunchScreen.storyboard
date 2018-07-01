@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +19,46 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7kY-ge-rJI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ojC-Xs-bga"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nytimes" translatesAutoresizingMaskIntoConstraints="NO" id="bmL-zL-Ryt">
+                                <rect key="frame" x="0.0" y="20" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bmL-zL-Ryt" secondAttribute="height" multiplier="1:1" id="Py1-b2-ZoX"/>
+                                    <constraint firstAttribute="width" constant="90" id="akz-7C-RdE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nytimes-logo-png" translatesAutoresizingMaskIntoConstraints="NO" id="YsM-xc-fhJ">
+                                <rect key="frame" x="20" y="140.5" width="335" height="406"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWA-F7-kix">
+                                <rect key="frame" x="0.0" y="647" width="375" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="LfK-20-UKx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YsM-xc-fhJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="14o-EB-X4B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7kY-ge-rJI" secondAttribute="trailing" id="F3W-uL-94n"/>
+                            <constraint firstAttribute="trailing" secondItem="YsM-xc-fhJ" secondAttribute="trailing" constant="20" id="Ufb-6v-Wac"/>
+                            <constraint firstItem="bmL-zL-Ryt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZTi-0L-O5V"/>
+                            <constraint firstItem="XWA-F7-kix" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dwc-Zt-XHx"/>
+                            <constraint firstItem="7kY-ge-rJI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eNS-8f-sna"/>
+                            <constraint firstItem="YsM-xc-fhJ" firstAttribute="top" secondItem="bmL-zL-Ryt" secondAttribute="bottom" constant="30" id="iGh-Kk-9pP"/>
+                            <constraint firstItem="XWA-F7-kix" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kSx-91-Nkz"/>
+                            <constraint firstItem="XWA-F7-kix" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="olH-gD-buv"/>
+                            <constraint firstItem="7kY-ge-rJI" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="qHq-In-bHx"/>
+                            <constraint firstItem="bmL-zL-Ryt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uPk-Fh-fib"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +67,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nytimes" width="400" height="400"/>
+        <image name="nytimes-logo-png" width="568" height="406"/>
+    </resources>
 </document>

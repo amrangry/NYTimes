@@ -7,13 +7,15 @@
 //
 
 import UIKit
-
+import ARSLineProgress
 class ProgressLoader: NSObject {
     static func show() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        ARSLineProgress.show()
     }
 
     static func dismiss() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        ARSLineProgress.hide()
     }
 }

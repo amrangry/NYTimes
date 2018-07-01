@@ -39,7 +39,7 @@ class MasterCustomTableViewCell: UITableViewCell {
         }
 
         if let date = mostViewed.publishedDate {
-            publishedDate.text = "🗒️ " + date
+            publishedDate.text = "🗓 " + date
         }
 
         guard let imageURLString = mostViewed.media?.first?.mediaMetadata?.first?.url, let imageURL = URL(string: imageURLString) else {
