@@ -1,14 +1,12 @@
 
 
-
- <div style="text-align:center"><img src ="https://github.com/amrangry/NYTimes/blob/master/project-logo-png.png?raw=true" /></div>
-
-
-
-
-
 # NYTimes
 Popular news fees for NYTimes 
+
+<p align="center">
+  <img src ="https://github.com/amrangry/NYTimes/blob/master/project-logo-png.png?raw=true"/>
+</p>
+
 
 ## Demo for displaying News from NY Times
 
