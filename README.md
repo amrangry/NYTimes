@@ -1,7 +1,10 @@
 
 
 
-![Alt text](https://github.com/amrangry/NYTimes/blob/master/project-logo-png.png?raw=true "logo")
+ <div style="text-align:center"><img src ="https://github.com/amrangry/NYTimes/blob/master/project-logo-png.png?raw=true" /></div>
+
+ 
+
 
 
 # NYTimes
