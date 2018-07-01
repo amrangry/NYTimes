@@ -3,7 +3,7 @@
 
  <div style="text-align:center"><img src ="https://github.com/amrangry/NYTimes/blob/master/project-logo-png.png?raw=true" /></div>
 
- 
+
 
 
 
@@ -40,7 +40,7 @@ Swift 4.1
 ---
 You need run makefile do that follow the following 
 
-```
+```bash
 * open terminal from finder
 * $ cd ../Project folder 
 * $ make start
