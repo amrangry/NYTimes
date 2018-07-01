@@ -10,6 +10,7 @@ target 'NYTimes' do
   target 'NYTimesTests' do
     inherit! :search_paths
     # Pods for testing
+
   end
 
   target 'NYTimesUITests' do
@@ -17,8 +18,8 @@ target 'NYTimes' do
     # Pods for testing
   end
 
-
-  pod 'SwiftLint', :inhibit_warnings => true
-  pod 'Alamofire'
-
+    pod 'SwiftLint', :inhibit_warnings => true
+    pod 'Alamofire' , :inhibit_warnings => true
+    pod 'ARSLineProgress', '~> 2.0' , :inhibit_warnings => true
+    pod 'Kingfisher', '~> 4.0' , :inhibit_warnings => true
 end

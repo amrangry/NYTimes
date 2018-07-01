@@ -1,20 +1,28 @@
 PODS:
   - Alamofire (4.7.2)
+  - ARSLineProgress (2.2.1)
+  - Kingfisher (4.8.0)
   - SwiftLint (0.26.0)
 
 DEPENDENCIES:
   - Alamofire
+  - ARSLineProgress (~> 2.0)
+  - Kingfisher (~> 4.0)
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - ARSLineProgress
+    - Kingfisher
     - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  ARSLineProgress: b344944496913e98d8fe7bab94ea5d488fbf41fb
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
 
-PODFILE CHECKSUM: c1b7b38e8aa7db537611e2eec95958d46fd7b60b
+PODFILE CHECKSUM: 20c9742fea046af5b7aa0f1ac9158a0223f19997
 
 COCOAPODS: 1.5.3

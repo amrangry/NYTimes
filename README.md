@@ -3,6 +3,7 @@ Popular news fees for NYTimes
 
 ## Demo for displaying News from NY Times
 
+https://developer.nytimes.com/
 
 Topic demoestrate in this application
 ---
@@ -49,6 +50,8 @@ When creating a pull request, please adhere to the current coding style where po
 ## LICENSE
 ---
 Distributed under the MIT License.
+
+Copyright 2018 Amr Elghadban
 
 
 ## Author
