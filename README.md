@@ -44,6 +44,12 @@ You need run makefile do that follow the following
 * $ make start
 ```
 
+## Design Pattern
+---
+<p align="center">
+  <img src ="https://github.com/amrangry/NYTimes/blob/master/MVVM.png?raw=true"/>
+</p>
+
 ## Contributing 🤘
 ---
 All your feedback and help to improve this project is very welcome. Please create issues for your bugs, ideas and enhancement requests, or better yet, contribute directly by creating a PR. 😎
