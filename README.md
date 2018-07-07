@@ -36,8 +36,19 @@ Swift 4.1
 
 ##  Setup Prerequisites   💻
 ---
-You need run makefile do that follow the following 
+We use Bundler for gems dependancey managment 
+ * 1- How to install bundler 
+---
+Getting Started
+Getting started with bundler is easy! Open a terminal window and run this command:
+```bash
+$ gem install bundler
+```
+to read more about bundler please visit https://bundler.io/
 
+
+* 2- You need to run makefile to setup the project by doing the following steps
+---
 ```bash
 * open terminal from finder
 * $ cd ../Project folder 
