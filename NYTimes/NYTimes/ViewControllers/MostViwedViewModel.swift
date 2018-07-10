@@ -22,9 +22,9 @@ class MostViwedViewModel: NSObject {
 
     // MARK: - Private Varibles
 
-    private var dataManager: DataManager
+    private var dataManager: DataProvider
 
-    init(dataManager: DataManager) {
+    init(dataManager: DataProvider) {
         self.dataManager = dataManager
     }
 

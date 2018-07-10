@@ -20,7 +20,7 @@ class MostViewedMasterViewController: UITableViewController {
             let topViewController = (controllers[controllers.count - 1] as? UINavigationController)?.topViewController
             detailViewController = topViewController as? DetailViewController
         }
-        mostViwedViewModel = MostViwedViewModel(dataManager: DataManager.share)
+        mostViwedViewModel = MostViwedViewModel(dataManager: DataProvider.share)
         mostViwedViewModel?.delegate = self
         mostViwedViewModel?.fetchData()
     }

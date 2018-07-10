@@ -62,9 +62,11 @@ enum URLFactory {
             urlStringBuilder += componentPath
         }
         guard let allowedURL = urlStringBuilder.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
+            assertionFailure("error in url encoded as query allowed")
             return nil
         }
         guard let url = URL(string: allowedURL) else {
+            assertionFailure("url string is not a valid url")
             return nil
         }
         return url

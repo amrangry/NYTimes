@@ -1,5 +1,5 @@
 //
-//  BackendAPI.swift
+//  ClientAPI.swift
 //  NYTimes
 //
 //  Created by Amr ELghadban on 6/30/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BackendAPI {
+class ClientAPI {
 
     /// Get NewYork Times Mostviewed Articles for Section and with the period
     ///

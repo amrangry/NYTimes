@@ -1,5 +1,5 @@
 //
-//  DataManager.swift
+//  DataProvider.swift
 //  NYTimes
 //
 //  Created by Amr ELghadban on 6/30/18.
@@ -10,18 +10,16 @@ import CoreData
 import Foundation
 import UIKit
 
-class DataManager {
-
-    static let share = DataManager()
+class DataProvider {
+    static let share = DataProvider()
 
     private init() {
-
     }
 
     func getNYTimesArticles(completionHandler: @escaping (_ isSuccess: Bool, _ status: ResponseStatus, _ result: [Displayable]?) -> Void) {
         ProgressLoader.show()
 
-        BackendAPI.getNYTimesArticles { result in
+        ClientAPI.getNYTimesArticles { result in
             ProgressLoader.dismiss()
             debugPrint(result)
             switch result {
@@ -51,7 +49,7 @@ class DataManager {
     }
 }
 
-extension DataManager {
+extension DataProvider {
     func failureErrorCompletionHandler(error: NetworkErrorCodeForResponse) -> (Bool, ResponseStatus, String) {
         switch error {
         case .errorInParsingResponse:
