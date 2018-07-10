@@ -22,22 +22,31 @@ class DataConvertionTest: XCTestCase {
 
     /// This is an example of a functional test case for Data extension to convert String to data.
     func testDataConvertionFromString() {
+        //Given
         let stringValueToTest = "This is an example of a functional test case."
+        //When
         let data = Data.convertToData(stringValueToTest)
+        //Then
         XCTAssertNotNil(data)
     }
 
     /// This is an example of a functional test case for Data extension to convert [String: AnyObject] to data.
     func testDataConvertionFromDictioanry() {
+        //Given
         let dictionValueToTest: [String: AnyObject] = ["key": 100 as AnyObject]
+        //When
         let data = Data.convertToData(dictionValueToTest)
+        //Then
         XCTAssertNotNil(data)
     }
 
     /// This is an example of a functional test case for Data extension to convert [[String: AnyObject]] to data.
     func testDataConvertionFromArrayOfDictioanry() {
+        //Given
         let dictionValueToTest: [[String: AnyObject]] = [["key": 100 as AnyObject], ["key": 100 as AnyObject]]
+        //When
         let data = Data.convertToData(dictionValueToTest)
+        //Then
         XCTAssertNotNil(data)
     }
 }

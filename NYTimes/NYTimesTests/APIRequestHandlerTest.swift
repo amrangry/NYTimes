@@ -9,39 +9,51 @@
 import XCTest
 
 class APIRequestHandlerTest: XCTestCase {
+    var sessionUnderTest: URLSession!
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        sessionUnderTest = URLSession(configuration: URLSessionConfiguration.default)
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sessionUnderTest = nil
         super.tearDown()
     }
 
+    /// Asynchronous test: success fast, failure slow
     /// This is an example of a performance test case for calling MostViewed API
     func testMostViewedAPICall() {
+        // given
         weak var expectation = self.expectation(description: "Response Received")
-        self.measure {
-            guard let urlRoute = URLFactory.getURL(.mostviewed, section: "all-sections", timePeriod: "7").url else {
-                XCTFail("url not valid")
-                return
-            }
 
-            guard let urlRequest = APIRequestHandler.share.createRequest(url: urlRoute, forceUpdate: false) else {
-                XCTFail("URLRequest not valid")
-                return
-            }
-
-            APIRequestHandler.share.InvokeURLRequest(request: urlRequest) { response in
-                XCTAssertNotNil(response)
-                expectation?.fulfill()
-            }
+        guard let urlRoute = URLFactory.getURL(.mostviewed, section: "all-sections", timePeriod: "7").url else {
+            // then
+            XCTFail("Error: url not valid")
+            return
         }
 
-        self.waitForExpectations(timeout: 30) { error in
+        guard let urlRequest = APIRequestHandler.share.createRequest(url: urlRoute, forceUpdate: false) else {
+            // then
+            XCTFail("Error: URLRequest not valid")
+            return
+        }
+        // when
+        APIRequestHandler.share.InvokeURLRequest(request: urlRequest) { result in
+            // then
+            XCTAssertNotNil(result)
+            switch result {
+            case .success(let value):
+                XCTAssertNotNil(value)
+                expectation?.fulfill()
+            case .failure(let error):
+                XCTFail("Error: \(error.localizedDescription)")
+            }
+        }
+        waitForExpectations(timeout: 30) { error in
             XCTAssertNil(error)
-            // expectation = nil
         }
     }
 }
