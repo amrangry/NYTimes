@@ -19,7 +19,7 @@ class MainStoryBoardTest: XCTestCase {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
         storyboard = UIStoryboard(name: "Main",
-                                       bundle: Bundle.main)
+                                  bundle: Bundle.main)
 
         XCTAssertNotNil(storyboard)
     }

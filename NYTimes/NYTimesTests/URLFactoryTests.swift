@@ -35,6 +35,7 @@ class URLFactoryTests: XCTestCase {
 
     func testPathExplicitKeysIsAvailable() {
         guard let mostViewedStringPath = URLFactory.getURL(.mostviewed, section: "all-sections", timePeriod: "7").stringPath else {
+            XCTFail("String value for path not exist")
             return
         }
         XCTAssertNotNil(mostViewedStringPath)

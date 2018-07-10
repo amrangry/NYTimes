@@ -244,12 +244,12 @@
 		9D51C92020E8010500EEFAC8 /* NYTimesTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D19377820F4DD0200BE3656 /* FacetEnumTest.swift */,
-				9D19377620F4DB3000BE3656 /* MostViewedTypeEnumTest.swift */,
-				9D19377420F4D99000BE3656 /* FormatEnumTest.swift */,
 				9D19377220F4BB3000BE3656 /* APIRequestHandlerTest.swift */,
 				9D19376E20F4A0E400BE3656 /* DataConvertionTest.swift */,
+				9D19377820F4DD0200BE3656 /* FacetEnumTest.swift */,
+				9D19377420F4D99000BE3656 /* FormatEnumTest.swift */,
 				9D51C92120E8010500EEFAC8 /* MainStoryBoardTest.swift */,
+				9D19377620F4DB3000BE3656 /* MostViewedTypeEnumTest.swift */,
 				9D19377020F4A54100BE3656 /* URLFactoryTests.swift */,
 				9D51C92320E8010500EEFAC8 /* Info.plist */,
 			);

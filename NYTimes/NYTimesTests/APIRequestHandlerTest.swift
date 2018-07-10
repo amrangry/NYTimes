@@ -21,26 +21,27 @@ class APIRequestHandlerTest: XCTestCase {
 
     /// This is an example of a performance test case for calling MostViewed API
     func testMostViewedAPICall() {
-        let expectation = self.expectation(description: "Response Received")
-        // This is an example of a performance test case.
+        weak var expectation = self.expectation(description: "Response Received")
         self.measure {
-            // Put the code you want to measure the time of here.
             guard let urlRoute = URLFactory.getURL(.mostviewed, section: "all-sections", timePeriod: "7").url else {
+                XCTFail("url not valid")
                 return
             }
 
-            guard let url = APIRequestHandler.share.createRequest(url: urlRoute, forceUpdate: false) else {
+            guard let urlRequest = APIRequestHandler.share.createRequest(url: urlRoute, forceUpdate: false) else {
+                XCTFail("URLRequest not valid")
                 return
             }
 
-            APIRequestHandler.share.InvokeURLRequest(request: url) { response in
+            APIRequestHandler.share.InvokeURLRequest(request: urlRequest) { response in
                 XCTAssertNotNil(response)
-                expectation.fulfill()
+                expectation?.fulfill()
             }
         }
 
         self.waitForExpectations(timeout: 30) { error in
             XCTAssertNil(error)
+            // expectation = nil
         }
     }
 }
