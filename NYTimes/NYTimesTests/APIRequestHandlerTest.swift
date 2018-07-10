@@ -9,17 +9,17 @@
 import XCTest
 
 class APIRequestHandlerTest: XCTestCase {
-    var sessionUnderTest: URLSession!
+    var apiRequestHandlerUnderTest: APIRequestHandler!
 
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        sessionUnderTest = URLSession(configuration: URLSessionConfiguration.default)
+        apiRequestHandlerUnderTest = APIRequestHandler.share
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        sessionUnderTest = nil
+        apiRequestHandlerUnderTest = nil
         super.tearDown()
     }
 
@@ -35,13 +35,13 @@ class APIRequestHandlerTest: XCTestCase {
             return
         }
 
-        guard let urlRequest = APIRequestHandler.share.createRequest(url: urlRoute, forceUpdate: false) else {
+        guard let urlRequest = apiRequestHandlerUnderTest.createRequest(url: urlRoute, forceUpdate: false) else {
             // then
             XCTFail("Error: URLRequest not valid")
             return
         }
         // when
-        APIRequestHandler.share.InvokeURLRequest(request: urlRequest) { result in
+        apiRequestHandlerUnderTest.InvokeURLRequest(request: urlRequest) { result in
             // then
             XCTAssertNotNil(result)
             switch result {

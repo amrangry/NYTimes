@@ -14,7 +14,7 @@ class MainStoryBoardTest: XCTestCase {
     // MARK: Varibels To test
 
     // (SUT) system unit under test
-    var storyboardUnderTest: UIStoryboard?
+    var storyboardUnderTest: UIStoryboard!
 
     override func setUp() {
         super.setUp()
@@ -34,7 +34,7 @@ class MainStoryBoardTest: XCTestCase {
 
     func testMostViewedMasterViewController() {
         // Given
-        let mostViewedMasterViewController = storyboardUnderTest?.instantiateViewController(withIdentifier: "MostViewedMasterViewController")
+        let mostViewedMasterViewController = storyboardUnderTest.instantiateViewController(withIdentifier: "MostViewedMasterViewController")
         // Then
         XCTAssertNotNil(mostViewedMasterViewController)
         XCTAssertTrue(mostViewedMasterViewController is MostViewedMasterViewController)
@@ -42,7 +42,7 @@ class MainStoryBoardTest: XCTestCase {
 
     func testDetailViewController() {
         // Given
-        let detailViewController = storyboardUnderTest?.instantiateViewController(withIdentifier: "DetailViewController")
+        let detailViewController = storyboardUnderTest.instantiateViewController(withIdentifier: "DetailViewController")
         //then
         XCTAssertNotNil(detailViewController)
         XCTAssertTrue(detailViewController is DetailViewController)
