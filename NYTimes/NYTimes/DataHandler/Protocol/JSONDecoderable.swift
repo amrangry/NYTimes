@@ -9,11 +9,11 @@
 import Foundation
 
 protocol JSONDecoderable {
-    static func decodeJsonData<T: Codable>(parcelable: T, _ jsonData: Data, isObject: Bool) -> Any?
+    static func decodeJsonData<T: Codable>(parcelable: T.Type, _ jsonData: Data, isObject: Bool) -> Any?
 }
 
 extension JSONDecoderable where Self: Codable {
-    static func decodeJsonData<T: Codable>(parcelable: T, _ jsonData: Data, isObject: Bool) -> Any? {
+    static func decodeJsonData<T: Codable>(parcelable: T.Type, _ jsonData: Data, isObject: Bool) -> Any? {
         do {
             let jsonDecoder = JSONDecoder()
             var result: Any?

@@ -29,7 +29,7 @@ class DataProvider {
                     return
                 }
 
-                guard let mostViewedResponseResult = MostViewedResponse.decodeJsonData(parcelable: MostViewedResponse(), jsonData, isObject: true) as? MostViewedResponse else {
+                guard let mostViewedResponseResult = MostViewedResponse.decodeJsonData(parcelable: MostViewedResponse.self, jsonData, isObject: true) as? MostViewedResponse else {
                     completionHandler(false, ResponseStatus.errorInParsingResponse, nil)
                     return
                 }
