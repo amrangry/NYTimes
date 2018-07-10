@@ -11,13 +11,14 @@
 		8D4E52ABDEFEBA0FEFFAD5BC /* Pods_NYTimesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E74A39AEAB50E8635B1E2B /* Pods_NYTimesTests.framework */; };
 		9D19376F20F4A0E400BE3656 /* DataConvertionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19376E20F4A0E400BE3656 /* DataConvertionTest.swift */; };
 		9D19377120F4A54100BE3656 /* URLFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19377020F4A54100BE3656 /* URLFactoryTests.swift */; };
+		9D19377320F4BB3000BE3656 /* APIRequestHandlerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19377220F4BB3000BE3656 /* APIRequestHandlerTest.swift */; };
 		9D51C90820E8010300EEFAC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C90720E8010300EEFAC8 /* AppDelegate.swift */; };
 		9D51C90D20E8010300EEFAC8 /* MostViewedMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C90C20E8010300EEFAC8 /* MostViewedMasterViewController.swift */; };
 		9D51C90F20E8010300EEFAC8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C90E20E8010300EEFAC8 /* DetailViewController.swift */; };
 		9D51C91220E8010300EEFAC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D51C91020E8010300EEFAC8 /* Main.storyboard */; };
 		9D51C91420E8010500EEFAC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D51C91320E8010500EEFAC8 /* Assets.xcassets */; };
 		9D51C91720E8010500EEFAC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D51C91520E8010500EEFAC8 /* LaunchScreen.storyboard */; };
-		9D51C92220E8010500EEFAC8 /* NYTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C92120E8010500EEFAC8 /* NYTimesTests.swift */; };
+		9D51C92220E8010500EEFAC8 /* MainStoryBoardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C92120E8010500EEFAC8 /* MainStoryBoardTest.swift */; };
 		9D51C92D20E8010500EEFAC8 /* NYTimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C92C20E8010500EEFAC8 /* NYTimesUITests.swift */; };
 		9D51C99320E8184A00EEFAC8 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C98120E8184A00EEFAC8 /* DataProvider.swift */; };
 		9D51C99420E8184A00EEFAC8 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C98120E8184A00EEFAC8 /* DataProvider.swift */; };
@@ -61,9 +62,9 @@
 		9D51C9D620E82CC500EEFAC8 /* MasterCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C9D420E82CC500EEFAC8 /* MasterCustomTableViewCell.swift */; };
 		9D51C9D720E82CC500EEFAC8 /* MasterCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C9D420E82CC500EEFAC8 /* MasterCustomTableViewCell.swift */; };
 		9D51C9D820E82CC500EEFAC8 /* MasterCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C9D420E82CC500EEFAC8 /* MasterCustomTableViewCell.swift */; };
-		9D51C9DE20E84A6900EEFAC8 /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C9DD20E84A6900EEFAC8 /* AlamofireManager.swift */; };
-		9D51C9DF20E84A6900EEFAC8 /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C9DD20E84A6900EEFAC8 /* AlamofireManager.swift */; };
-		9D51C9E020E84A6900EEFAC8 /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C9DD20E84A6900EEFAC8 /* AlamofireManager.swift */; };
+		9D51C9DE20E84A6900EEFAC8 /* APIRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C9DD20E84A6900EEFAC8 /* APIRequestHandler.swift */; };
+		9D51C9DF20E84A6900EEFAC8 /* APIRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C9DD20E84A6900EEFAC8 /* APIRequestHandler.swift */; };
+		9D51C9E020E84A6900EEFAC8 /* APIRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C9DD20E84A6900EEFAC8 /* APIRequestHandler.swift */; };
 		9D51C9E220E8E50A00EEFAC8 /* MostViewedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C9E120E8E50A00EEFAC8 /* MostViewedResponse.swift */; };
 		9D51C9E320E8E50A00EEFAC8 /* MostViewedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C9E120E8E50A00EEFAC8 /* MostViewedResponse.swift */; };
 		9D51C9E420E8E50A00EEFAC8 /* MostViewedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51C9E120E8E50A00EEFAC8 /* MostViewedResponse.swift */; };
@@ -115,6 +116,7 @@
 		8C734FA0A712FB2DB7A80428 /* Pods-NYTimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYTimesTests/Pods-NYTimesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D19376E20F4A0E400BE3656 /* DataConvertionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConvertionTest.swift; sourceTree = "<group>"; };
 		9D19377020F4A54100BE3656 /* URLFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLFactoryTests.swift; sourceTree = "<group>"; };
+		9D19377220F4BB3000BE3656 /* APIRequestHandlerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestHandlerTest.swift; sourceTree = "<group>"; };
 		9D51C90420E8010300EEFAC8 /* NYTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D51C90720E8010300EEFAC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D51C90C20E8010300EEFAC8 /* MostViewedMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedMasterViewController.swift; sourceTree = "<group>"; };
@@ -124,7 +126,7 @@
 		9D51C91620E8010500EEFAC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D51C91820E8010500EEFAC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D51C91D20E8010500EEFAC8 /* NYTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D51C92120E8010500EEFAC8 /* NYTimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesTests.swift; sourceTree = "<group>"; };
+		9D51C92120E8010500EEFAC8 /* MainStoryBoardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryBoardTest.swift; sourceTree = "<group>"; };
 		9D51C92320E8010500EEFAC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D51C92820E8010500EEFAC8 /* NYTimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D51C92C20E8010500EEFAC8 /* NYTimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesUITests.swift; sourceTree = "<group>"; };
@@ -143,7 +145,7 @@
 		9D51C9C220E818D600EEFAC8 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		9D51C9C420E818D600EEFAC8 /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		9D51C9D420E82CC500EEFAC8 /* MasterCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCustomTableViewCell.swift; sourceTree = "<group>"; };
-		9D51C9DD20E84A6900EEFAC8 /* AlamofireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
+		9D51C9DD20E84A6900EEFAC8 /* APIRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestHandler.swift; sourceTree = "<group>"; };
 		9D51C9E120E8E50A00EEFAC8 /* MostViewedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedResponse.swift; sourceTree = "<group>"; };
 		9D51C9E620E8E57700EEFAC8 /* MostViewed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewed.swift; sourceTree = "<group>"; };
 		9D51C9EA20E8E5E200EEFAC8 /* MostViewedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedType.swift; sourceTree = "<group>"; };
@@ -236,8 +238,9 @@
 		9D51C92020E8010500EEFAC8 /* NYTimesTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D51C92120E8010500EEFAC8 /* NYTimesTests.swift */,
+				9D19377220F4BB3000BE3656 /* APIRequestHandlerTest.swift */,
 				9D19376E20F4A0E400BE3656 /* DataConvertionTest.swift */,
+				9D51C92120E8010500EEFAC8 /* MainStoryBoardTest.swift */,
 				9D19377020F4A54100BE3656 /* URLFactoryTests.swift */,
 				9D51C92320E8010500EEFAC8 /* Info.plist */,
 			);
@@ -307,7 +310,7 @@
 				9D51C98620E8184A00EEFAC8 /* URLFactory.swift */,
 				9D51C98720E8184A00EEFAC8 /* ClientAPI.swift */,
 				9D51C98820E8184A00EEFAC8 /* NetworkResult.swift */,
-				9D51C9DD20E84A6900EEFAC8 /* AlamofireManager.swift */,
+				9D51C9DD20E84A6900EEFAC8 /* APIRequestHandler.swift */,
 			);
 			path = NetworkingClient;
 			sourceTree = "<group>";
@@ -619,7 +622,7 @@
 				9D51C9E220E8E50A00EEFAC8 /* MostViewedResponse.swift in Sources */,
 				9D51C9C520E818D600EEFAC8 /* UIImageVIew+Extension.swift in Sources */,
 				9D51C9CB20E818D600EEFAC8 /* UIAlertController+Extensions.swift in Sources */,
-				9D51C9DE20E84A6900EEFAC8 /* AlamofireManager.swift in Sources */,
+				9D51C9DE20E84A6900EEFAC8 /* APIRequestHandler.swift in Sources */,
 				9D51C9D620E82CC500EEFAC8 /* MasterCustomTableViewCell.swift in Sources */,
 				9D51C9EF20E8E6EB00EEFAC8 /* Facet.swift in Sources */,
 				9D51C90D20E8010300EEFAC8 /* MostViewedMasterViewController.swift in Sources */,
@@ -643,10 +646,10 @@
 				9D51C99A20E8184A00EEFAC8 /* JSONDecoderable.swift in Sources */,
 				9D51C9CF20E818D600EEFAC8 /* UITableView+Extension.swift in Sources */,
 				9D51C9E820E8E57700EEFAC8 /* MostViewed.swift in Sources */,
-				9D51C9DF20E84A6900EEFAC8 /* AlamofireManager.swift in Sources */,
+				9D51C9DF20E84A6900EEFAC8 /* APIRequestHandler.swift in Sources */,
 				9D51C99D20E8184A00EEFAC8 /* URLFactory.swift in Sources */,
 				9D51C9C920E818D600EEFAC8 /* UIApplication+Extensions.swift in Sources */,
-				9D51C92220E8010500EEFAC8 /* NYTimesTests.swift in Sources */,
+				9D51C92220E8010500EEFAC8 /* MainStoryBoardTest.swift in Sources */,
 				9D51C9D720E82CC500EEFAC8 /* MasterCustomTableViewCell.swift in Sources */,
 				9D51C9F420E8E77600EEFAC8 /* Media.swift in Sources */,
 				9D51C9EC20E8E5E200EEFAC8 /* MostViewedType.swift in Sources */,
@@ -662,6 +665,7 @@
 				9D51C9D220E818D600EEFAC8 /* Data+Extension.swift in Sources */,
 				9D51C9CC20E818D600EEFAC8 /* UIAlertController+Extensions.swift in Sources */,
 				9D51C9F820E8E7DE00EEFAC8 /* MediaMetadata.swift in Sources */,
+				9D19377320F4BB3000BE3656 /* APIRequestHandlerTest.swift in Sources */,
 				9D19376F20F4A0E400BE3656 /* DataConvertionTest.swift in Sources */,
 				9D19377120F4A54100BE3656 /* URLFactoryTests.swift in Sources */,
 				9D51C9A320E8184A00EEFAC8 /* NetworkResult.swift in Sources */,
@@ -676,7 +680,7 @@
 				9D51C99B20E8184A00EEFAC8 /* JSONDecoderable.swift in Sources */,
 				9D51C9D020E818D600EEFAC8 /* UITableView+Extension.swift in Sources */,
 				9D51C9E920E8E57700EEFAC8 /* MostViewed.swift in Sources */,
-				9D51C9E020E84A6900EEFAC8 /* AlamofireManager.swift in Sources */,
+				9D51C9E020E84A6900EEFAC8 /* APIRequestHandler.swift in Sources */,
 				9D51C99E20E8184A00EEFAC8 /* URLFactory.swift in Sources */,
 				9D51C9CA20E818D600EEFAC8 /* UIApplication+Extensions.swift in Sources */,
 				9D51C92D20E8010500EEFAC8 /* NYTimesUITests.swift in Sources */,

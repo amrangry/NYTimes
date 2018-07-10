@@ -23,18 +23,18 @@ class URLFactoryTests: XCTestCase {
     /// This is an example of a functional test case API Path MostViewed if section and timePeiord is giver it shouldn't be null
     func testAPIPathStringForMostViewed() {
         // Given a section and time period, the API path should always be returned.
-        let mostViewedStringPath = URLFactory.getURL(.mostviewed, section: "all-sections", timePeriod: "1").stringPath
+        let mostViewedStringPath = URLFactory.getURL(.mostviewed, section: "all-sections", timePeriod: "7").stringPath
         XCTAssertNotNil(mostViewedStringPath)
     }
 
     /// This is an example of a functional test case API Path MostViewed if section and timePeiord is giver it shouldn't be null
     func testAPIPathURLForMostViewed() {
-        let mostViewedStringPathURL = URLFactory.getURL(.mostviewed, section: "all-sections", timePeriod: "1").url
+        let mostViewedStringPathURL = URLFactory.getURL(.mostviewed, section: "all-sections", timePeriod: "7").url
         XCTAssertNotNil(mostViewedStringPathURL)
     }
 
     func testPathExplicitKeysIsAvailable() {
-        guard let mostViewedStringPath = URLFactory.getURL(.mostviewed, section: "all-sections", timePeriod: "1").stringPath else {
+        guard let mostViewedStringPath = URLFactory.getURL(.mostviewed, section: "all-sections", timePeriod: "7").stringPath else {
             return
         }
         XCTAssertNotNil(mostViewedStringPath)

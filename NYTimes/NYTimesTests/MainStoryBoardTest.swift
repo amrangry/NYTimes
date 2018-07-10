@@ -9,7 +9,7 @@
 @testable import NYTimes
 import XCTest
 
-class NYTimesTests: XCTestCase {
+class MainStoryBoardTest: XCTestCase {
 
     // MARK: Varibels To test
 
@@ -30,24 +30,17 @@ class NYTimesTests: XCTestCase {
         super.tearDown()
     }
 
-    func test_VC_MostViewedMasterViewController() {
+    func testMostViewedMasterViewController() {
         let mostViewedMasterViewController = storyboard?.instantiateViewController(withIdentifier: "MostViewedMasterViewController")
 
         XCTAssertNotNil(mostViewedMasterViewController)
         XCTAssertTrue(mostViewedMasterViewController is MostViewedMasterViewController)
     }
 
-    func test_VC_DetailViewController() {
+    func testDetailViewController() {
         let detailViewController = storyboard?.instantiateViewController(withIdentifier: "DetailViewController")
 
         XCTAssertNotNil(detailViewController)
         XCTAssertTrue(detailViewController is DetailViewController)
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
     }
 }

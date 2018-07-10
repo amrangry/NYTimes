@@ -23,12 +23,12 @@ class ClientAPI {
             return
         }
 
-        guard let url = AlamofireManager.share.createRequest(url: urlRoute, forceUpdate: false) else {
+        guard let url = APIRequestHandler.share.createRequest(url: urlRoute, forceUpdate: false) else {
             completionHandler(NetworkResult.failure(.noInternet))
             return
         }
 
-        AlamofireManager.share.InvokeURLRequest(request: url) { response in
+        APIRequestHandler.share.InvokeURLRequest(request: url) { response in
             completionHandler(response)
         }
     }

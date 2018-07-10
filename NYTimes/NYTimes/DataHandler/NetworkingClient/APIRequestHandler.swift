@@ -5,17 +5,19 @@
 //  Created by Amr ELghadban on 6/30/18.
 //  Copyright © 2018 ADKA. All rights reserved.
 //
-import Foundation
 import Alamofire
+import Foundation
 /// Class responsible to call teh networklayer and return back with response result
-class AlamofireManager {
-        // MARK: - properites
+class APIRequestHandler {
+
+    // MARK: - properites
+
     var requestTimeout: TimeInterval = 60.0
     var commanParameters: Parameters = [:]
     var commanHttpHeader: HTTPHeaders = [:]
 
     /// SingleTon Varible for accessing the class.
-    static let share: AlamofireManager = AlamofireManager()
+    static let share: APIRequestHandler = APIRequestHandler()
 
     /// This prevents others from using the default '()' initializer for this class.
     private init() {
@@ -104,8 +106,10 @@ class AlamofireManager {
     }
 }
 
-extension AlamofireManager {
+extension APIRequestHandler {
+
     // MARK: - Helper methods
+
     func createRequest(urlString: String, forceUpdate: Bool) -> URLRequest? {
         guard let allowedURL = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
             return nil
