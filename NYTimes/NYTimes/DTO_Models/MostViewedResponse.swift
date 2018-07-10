@@ -19,9 +19,3 @@ struct MostViewedResponse: Codable, JSONDecoderable, Displayable {
         case results
     }
 }
-
-extension MostViewedResponse {
-    init() {
-        self.init(status: nil, copyright: nil, numResults: nil, results: nil)
-    }
-}
