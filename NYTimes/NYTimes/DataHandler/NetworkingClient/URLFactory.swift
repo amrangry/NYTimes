@@ -56,6 +56,10 @@ enum URLFactory {
         return "?api-key=" + apiKeyString
     }
 
+    /// Building Url from the given variadic parameters
+    ///
+    /// - Parameter parameters: String component of url
+    /// - Returns: URL 
     func buildURL(parameters: String...) -> URL? {
         var urlStringBuilder: String = ""
         for componentPath in parameters {
