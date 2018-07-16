@@ -69,6 +69,15 @@ When reporting an issue, please add a detailed instruction, and if possible a co
 
 When creating a pull request, please adhere to the current coding style where possible, and create tests with your code so it keeps providing an awesome test coverage level 💪
 
+
+<details>
+<summary>## LICENSE</summary>
+---
+Distributed under the MIT License.
+
+Copyright 2018 Amr Elghadban
+</details>
+
 ## LICENSE
 ---
 Distributed under the MIT License.

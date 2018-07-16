@@ -405,6 +405,8 @@
 				9D51C90220E8010300EEFAC8 /* Resources */,
 				9D51C9DC20E83E6900EEFAC8 /* SwiftLint */,
 				C7C22AD861AC1F3459584724 /* [CP] Embed Pods Frameworks */,
+				9DA09EC520FCFC1100BC54A5 /* SetBuildNumber */,
+				9DA09EC620FCFC5E00BC54A5 /* RemoveATSExceptions */,
 			);
 			buildRules = (
 			);
@@ -590,7 +592,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+			shellScript = $SRCROOT/BuildPhases/SwiftLintRunScript.sh;
+		};
+		9DA09EC520FCFC1100BC54A5 /* SetBuildNumber */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SetBuildNumber;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $SRCROOT/BuildPhases/SetBuildNumber.sh;
+		};
+		9DA09EC620FCFC5E00BC54A5 /* RemoveATSExceptions */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = RemoveATSExceptions;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $SRCROOT/BuildPhases/RemoveATSExceptions.sh;
 		};
 		C7C22AD861AC1F3459584724 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
