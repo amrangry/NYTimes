@@ -26,6 +26,7 @@ Topic demoestrate in this application
 
 
 ## Environment
+---
 ```ruby
 Xcode 9.4.1
 ```
@@ -34,6 +35,7 @@ Swift 4.1
 ```
 
 ##  Setup Prerequisites   💻
+
 We use Bundler for gems dependancey managment 
  * 1- How to install bundler 
 ---
@@ -54,11 +56,13 @@ to read more about bundler please visit https://bundler.io/
 ```
 
 ## Design Pattern
+---
 <p align="center">
   <img src ="https://github.com/amrangry/NYTimes/blob/master/MVVM.png?raw=true"/>
 </p>
 
 ## Contributing 🤘
+---
 All your feedback and help to improve this project is very welcome. Please create issues for your bugs, ideas and enhancement requests, or better yet, contribute directly by creating a PR. 😎
 
 When reporting an issue, please add a detailed instruction, and if possible a code snippet or test that can be used as a reproducer of your problem. 💥
@@ -77,6 +81,7 @@ Copyright 2018 Amr Elghadban
 
 
 ## Author
+---
 #### If you wish to contact me
 
 WebSite: [https://amrangry.github.io/](https://amrangry.github.io/)
